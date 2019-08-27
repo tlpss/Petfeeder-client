@@ -1,0 +1,31 @@
+//This document list all kind of useful information regarding the pet feeder
+
+Components:
+-esp12e + esp12e motorshield
+-12v -> 5v convertor
+-16*2 LCD with I2C
+-DS3231 RTC
+-Rotary encoder
+- 12v 20rps DC motor (10kg.cm)
+
+Platform: 
+Platformio on Visual code
+
+Pin mapping:
+    shield
+        D1-> PWMA motor A 
+        D2-> PWMA motor B
+        D3 -> direction motor A 
+        D4 -> direction motor B
+    LCD
+        
+
+
+
+Datasheets & useful links
+https://components101.com/sites/default/files/component_datasheet/ESP12E%20Datasheet.pdf
+https://cdn.hackaday.io/files/8856378895104/user-mannual-for-esp-12e-motor-shield.pdf
+
+
+
+
