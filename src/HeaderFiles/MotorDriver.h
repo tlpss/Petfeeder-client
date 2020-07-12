@@ -9,8 +9,8 @@
 
     #ifndef _MOTORDRIVER_h
     #define _MOTORDRIVER_h
-#define PWM_MOTOR_PIN D3
-#define DIR_MOTOR_PIN D1
+#define PWM_MOTOR_PIN D1
+#define DIR_MOTOR_PIN D3
 
 #include <ESP8266WiFi.h>
 
@@ -32,7 +32,8 @@ class MotorDriver{
 
        digitalWrite(DIR_MOTOR_PIN,direction);
        analogWrite(PWM_MOTOR_PIN,speed);
-       delay(time);
+       delay(time); 
+       analogWrite(PWM_MOTOR_PIN, 0);
     
     }
 };

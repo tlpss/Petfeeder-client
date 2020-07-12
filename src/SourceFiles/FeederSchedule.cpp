@@ -4,6 +4,7 @@
 FeederSchedule::FeederSchedule(){
 	moments_count = 0;
 	current_moment_index = -1;
+	last_update_unix = 0;
 }
 
 FeederSchedule::~FeederSchedule(){
